@@ -26,7 +26,7 @@ config :bmx_web, BmxWeb.Endpoint,
       "--mode",
       "development",
       "--watch-stdin",
-      cd: Path.expand("../assets", __DIR__)
+      cd: Path.expand("../apps/bmx_web/assets", __DIR__)
     ]
   ]
 

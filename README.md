@@ -1,2 +1,1 @@
-# bmx
-Bugmark Exchange in Elixir
+# Bmx.Umbrella

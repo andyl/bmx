@@ -210,7 +210,7 @@ defmodule Bmx01.Repo.Migrations.BaseMigration do
     # [local_hash, chain_hash].digest              
     create table("events") do
       add(:event_type, :string)
-      add(:event_uuid, :strig)
+      add(:event_uuid, :string)
       add(:cmd_type, :string)
       add(:cmd_uuid, :string)
       add(:local_hash, :string)

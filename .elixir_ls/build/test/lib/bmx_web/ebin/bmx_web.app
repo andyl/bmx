@@ -1,6 +1,6 @@
 {application,bmx_web,
              [{applications,[kernel,stdlib,elixir,logger,runtime_tools,
-                             gettext,jason,phoenix_pubsub,bmx,phoenix_html,
+                             gettext,jason,phoenix_pubsub,bmx01,phoenix_html,
                              plug_cowboy,phoenix,phoenix_ecto]},
               {description,"bmx_web"},
               {modules,['Elixir.BmxWeb','Elixir.BmxWeb.Application',

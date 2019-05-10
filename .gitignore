@@ -6,6 +6,7 @@ _build/
 /.fetch
 *.ez
 .elixir_ls/
+/.elixir_ls/
 /tmp/
 /node_modules
 /assets/node_modules

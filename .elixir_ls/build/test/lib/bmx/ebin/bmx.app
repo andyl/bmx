@@ -1,9 +1,6 @@
 {application,bmx,
-             [{applications,[kernel,stdlib,elixir,logger,runtime_tools,jason,
-                             postgrex,ecto_sql]},
+             [{applications,[kernel,stdlib,elixir,logger]},
               {description,"bmx"},
-              {modules,['Elixir.Bmx','Elixir.Bmx.Application',
-                        'Elixir.Bmx.DataCase','Elixir.Bmx.Repo']},
+              {modules,['Elixir.Bmx']},
               {registered,[]},
-              {vsn,"0.1.0"},
-              {mod,{'Elixir.Bmx.Application',[]}}]}.
+              {vsn,"0.1.0"}]}.

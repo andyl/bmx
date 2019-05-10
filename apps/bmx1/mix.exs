@@ -1,15 +1,15 @@
-defmodule Bmx.MixProject do
+defmodule Bmx1.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :bmx,
+      app: :bmx1,
       version: "0.1.0",
       build_path: "../../_build",
       config_path: "../../config/config.exs",
       deps_path: "../../deps",
       lockfile: "../../mix.lock",
-      elixir: "~> 1.5",
+      elixir: "~> 1.8",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
@@ -22,7 +22,7 @@ defmodule Bmx.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {Bmx.Application, []},
+      mod: {Bmx1.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end

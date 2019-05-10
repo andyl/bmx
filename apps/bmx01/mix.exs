@@ -1,9 +1,9 @@
-defmodule Bmx1.MixProject do
+defmodule Bmx01.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :bmx1,
+      app: :bmx01,
       version: "0.1.0",
       build_path: "../../_build",
       config_path: "../../config/config.exs",
@@ -22,7 +22,7 @@ defmodule Bmx1.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {Bmx1.Application, []},
+      mod: {Bmx01.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end

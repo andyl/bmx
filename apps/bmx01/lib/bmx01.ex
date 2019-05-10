@@ -1,6 +1,6 @@
-defmodule Bmx1 do
+defmodule Bmx01 do
   @moduledoc """
-  Bmx1 keeps the contexts that define your domain
+  Bmx01 keeps the contexts that define your domain
   and business logic.
 
   Contexts are also responsible for managing your data, regardless

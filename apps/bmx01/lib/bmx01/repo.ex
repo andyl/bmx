@@ -1,5 +1,5 @@
-defmodule Bmx1.Repo do
+defmodule Bmx01.Repo do
   use Ecto.Repo,
-    otp_app: :bmx1,
+    otp_app: :bmx01,
     adapter: Ecto.Adapters.Postgres
 end

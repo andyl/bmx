@@ -1,4 +1,4 @@
-defmodule Bmx1.DataCase do
+defmodule Bmx01.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
   access to the application's data layer.
@@ -16,20 +16,20 @@ defmodule Bmx1.DataCase do
 
   using do
     quote do
-      alias Bmx1.Repo
+      alias Bmx01.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import Bmx1.DataCase
+      import Bmx01.DataCase
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Bmx1.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Bmx01.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Bmx1.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Bmx01.Repo, {:shared, self()})
     end
 
     :ok

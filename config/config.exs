@@ -10,11 +10,11 @@
 use Mix.Config
 
 # Configure Mix tasks and generators
-config :bmx,
-  ecto_repos: [Bmx.Repo]
+config :bmx01,
+  ecto_repos: [Bmx01.Repo]
 
 config :bmx_web,
-  ecto_repos: [Bmx.Repo],
+  ecto_repos: [Bmx01.Repo],
   generators: [context_app: :bmx]
 
 # Configures the endpoint

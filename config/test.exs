@@ -1,7 +1,7 @@
 use Mix.Config
 
 # Configure your database
-config :bmx, Bmx.Repo,
+config :bmx01, Bmx01.Repo,
   username: "postgres",
   password: "postgres",
   database: "bmx_test",

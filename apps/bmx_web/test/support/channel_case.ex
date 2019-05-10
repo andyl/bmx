@@ -26,10 +26,10 @@ defmodule BmxWeb.ChannelCase do
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Bmx.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Bmx01.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Bmx.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Bmx01.Repo, {:shared, self()})
     end
 
     :ok

@@ -1,0 +1,18 @@
+{
+  "apps/bmx01/lib/*.ex": {
+    "alternate": "apps/bmx01/test/{}_test.exs",
+    "type": "src"
+  },
+  "apps/bmx01/test/*_test.exs": {
+    "alternate": "apps/bmx01/lib/{}.ex",
+    "type": "src"
+  },
+  "apps/bmx_web/lib/*.ex": {
+    "alternate": "apps/bmx_web/test/{}_test.exs",
+    "type": "src"
+  },
+  "apps/bmx_web/test/*_test.exs": {
+    "alternate": "apps/bmx_web/lib/{}.ex",
+    "type": "src"
+  }
+}

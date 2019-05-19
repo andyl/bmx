@@ -15,6 +15,6 @@ defmodule Bmx.Umbrella.MixProject do
   # hex - {:mydep, "~> 0.3.0"}
   # git - {:mydep, git: "https://github.com/elixir-lang/mydep.git", tag: "0.1.0"}
   defp deps do
-    []
+    [{:mix_test_watch, "~> 0.8", only: :dev, runtime: false}]
   end
 end

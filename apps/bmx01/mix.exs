@@ -20,7 +20,7 @@ defmodule Bmx01.MixProject do
   def application do
     [
       mod: {Bmx01.Application, []},
-      appliations: [:ex_machina],
+      # appliations: [:ex_machina],
       extra_applications: [:logger, :runtime_tools]
     ]
   end

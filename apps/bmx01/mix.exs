@@ -35,6 +35,7 @@ defmodule Bmx01.MixProject do
       {:postgrex, ">= 0.0.0"},
       {:jason, "~> 1.0"},
       {:ex_machina, "~> 2.3"},
+      {:dialyxir, "~> 1.0.0-rc.6", only: [:dev], runtime: false}
       {:propcheck, "~> 1.1", only: [:test, :dev]}
     ]
   end

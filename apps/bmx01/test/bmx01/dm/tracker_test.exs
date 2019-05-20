@@ -2,15 +2,14 @@ defmodule Bmx01.Dm.TrackerTest do
   use ExUnit.Case, async: true
   alias Bmx01.Repo
   alias Bmx01.Dm.Tracker
-  alias Ecto.Adapters.SQL.Sandbox
   import Ecto.Query, only: [from: 2]
   import Bmx01.Factory
 
   setup do
-    :ok = Sandbox.checkout(Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Repo)
   end
 
-  test "greets the world" do
+  test "greet the world" do
     assert "hello" == "hello"
   end
 
@@ -40,7 +39,21 @@ defmodule Bmx01.Dm.TrackerTest do
       assert {:ok, _result} = Repo.insert(cset)
       assert Repo.one(cqry) == 1
     end
+
+    test "handling maps" do 
+      lmap = %{a: 1, b: 2}
+      tmap = %Tracker{}
+      attr = %{name: "asdf", exid: "qwer", type: "zxcv", jfields: lmap}
+      cset = Tracker.changeset(tmap, attr)
+      cqry = from(t in "trackers", select: count(t.id))
+      assert Repo.one(cqry) == 0
+      assert {:ok, trak} = Repo.insert(cset)
+      assert Repo.one(cqry) == 1
+      assert trak.jfields == lmap
+    end
   end
+
+
 
   describe "using Factory" do
     test "building an entity" do

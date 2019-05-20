@@ -58,7 +58,7 @@ defmodule Bmx01.Repo.Migrations.BaseMigration do
       add(:aon, :boolean, default: false)
       add(:status, :string)
       add(:expiration, :utc_datetime)
-      add(:maturation_range, :utc_datetime)
+      add(:maturation_range, :tsrange)
       add(:jfields, :map, default: "{}")
       timestamps()
     end

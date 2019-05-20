@@ -1,3 +1,3 @@
 defmodule Bmx01.Ecto.TsrangeType do
-  @behavior Ecto.Type
+  @behaviour Ecto.Type
 end

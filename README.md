@@ -1,4 +1,8 @@
-# Bmx
+# Bugmark Exchange
+
+## About this App
+
+Under Construction!
 
 ## Bootstrapping the App
 

@@ -15,3 +15,5 @@ _build/
 /installer/doc
 /installer/deps
 erl_crash.dump
+*.plt
+*.plt.hash

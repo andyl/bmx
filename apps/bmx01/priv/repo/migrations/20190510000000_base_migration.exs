@@ -148,6 +148,9 @@ defmodule Bmx01.Repo.Migrations.BaseMigration do
     end
 
     create table("users") do
+      add(:name, :string)
+      add(:email, :string)
+      add(:mobile, :string)
       add(:uuid, :string)
       add(:exid, :string)
       add(:admin, :boolean)

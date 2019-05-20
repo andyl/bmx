@@ -8,7 +8,7 @@ defmodule Bmx01.Dm.User do
   schema "users" do
     field(:name, :string)
     field(:email, :string)
-    field(:mobile, Bmx01.Ecto.PhoneNumType)
+    field(:mobile, Bmx01.Ecto.PhoneNum)
     field(:exid, :string)
     field(:jfields, :map)
     timestamps()

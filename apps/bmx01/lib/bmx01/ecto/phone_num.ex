@@ -1,4 +1,4 @@
-defmodule Bmx01.Ecto.PhoneNumType do
+defmodule Bmx01.Ecto.PhoneNum do
   import String, only: [slice: 3]
 
   @moduledoc """
@@ -10,9 +10,12 @@ defmodule Bmx01.Ecto.PhoneNumType do
   @behaviour Ecto.Type
 
   def type, do: :string
+
   def cast(phone_num) when is_binary(phone_num), do: cast_num(phone_num)
   def cast(_), do: :error
+
   def load(phone_num) when is_binary(phone_num), do: {:ok, present(phone_num)}
+
   def dump(phone_num) when is_binary(phone_num), do: {:ok, phone_num}
   def dump(_), do: :error
 

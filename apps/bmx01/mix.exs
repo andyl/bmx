@@ -34,6 +34,7 @@ defmodule Bmx01.MixProject do
       {:ecto_sql, "~> 3.0"},
       {:postgrex, ">= 0.0.0"},
       {:jason, "~> 1.0"},
+      {:pg_ranges, "~> 0.1.0"},
       {:ex_machina, "~> 2.3"},
       {:dialyxir, "~> 1.0.0-rc.6", only: [:dev], runtime: false},
       {:propcheck, "~> 1.1", only: [:test, :dev]}

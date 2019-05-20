@@ -2,7 +2,7 @@ defmodule Bmx01.Ecto.PhoneNumType do
   import String, only: [slice: 3]
 
   @moduledoc """
-  This is a demo - created to demonstrate the use of Ecto data types.
+  Demo to demonstrate the use of Ecto data types.
 
   See [the tutorial video](https://www.youtube.com/watch?v=MQNmXNyc_Bs) 
   to follow the example.

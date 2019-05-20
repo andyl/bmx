@@ -1,6 +1,6 @@
 defmodule Bmx01.Ecto.NumRangeType do
   @moduledoc """
-  This is a demo - created to demonstrate the use of Ecto data types.
+  Demo to demonstrate the use of Ecto data types.
 
   See [the blog post][1] to follow the example.
 

@@ -1,13 +1,16 @@
 defmodule Bmx01.Dm.Tracker do
+  @moduledoc """
+  Tracker DataModel.
+  """
   use Ecto.Schema
   import Ecto.Changeset
 
   schema "trackers" do
-    field :type, :string
-    field :uuid, :string
-    field :name, :string
-    field :exid, :string
-    field :jfields, :map
+    field(:type, :string)
+    field(:uuid, :string)
+    field(:name, :string)
+    field(:exid, :string)
+    field(:jfields, :map)
     timestamps()
   end
 

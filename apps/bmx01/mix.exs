@@ -36,8 +36,8 @@ defmodule Bmx01.MixProject do
       {:postgrex, ">= 0.0.0"},
       {:pg_ranges, "~> 0.1.0"},
       # CQRS
-      {:commanded, "~> 0.18"},
-      {:eventstore, "~> 0.16"},
+      # {:commanded, "~> 0.18"},
+      # {:eventstore, "~> 0.16"},
       # UTIL
       {:jason, "~> 1.1"},
       {:telemetry, "~> 0.3"},

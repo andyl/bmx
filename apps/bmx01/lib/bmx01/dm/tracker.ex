@@ -1,6 +1,12 @@
 defmodule Bmx01.Dm.Tracker do
   @moduledoc """
   Tracker DataModel.
+
+  The Tracker references a collection of stored items of a particular type.
+
+  Item Types could include: Bugs, Issues, Tasks, Weather, CVE, etc.
+
+  For each Tracker, there are multiple Issues.
   """
   use Ecto.Schema
   import Ecto.Changeset

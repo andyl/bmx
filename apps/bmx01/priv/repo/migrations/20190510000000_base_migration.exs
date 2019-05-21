@@ -1,5 +1,6 @@
 defmodule Bmx01.Repo.Migrations.BaseMigration do
   use Ecto.Migration
+  use Bmx01.Ecto.Migration
 
   def change do
     # Tracker::BugZilla, Tracker::GitHub, Tracker::Cvrf
@@ -24,6 +25,7 @@ defmodule Bmx01.Repo.Migrations.BaseMigration do
       add(:sequence, :integer)
       add(:jfields, :map, default: "{}")
       add(:synced_at, :utc_datetime)
+      statements()
       timestamps()
     end
 

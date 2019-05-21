@@ -31,10 +31,17 @@ defmodule Bmx01.MixProject do
 
   defp deps do
     [
+      # DATABASE
       {:ecto_sql, "~> 3.0"},
       {:postgrex, ">= 0.0.0"},
-      {:jason, "~> 1.0"},
       {:pg_ranges, "~> 0.1.0"},
+      # CQRS
+      {:commanded, "~> 0.18"},
+      {:eventstore, "~> 0.16"},
+      # UTIL
+      {:jason, "~> 1.1"},
+      {:telemetry, "~> 0.3"},
+      # TESTING
       {:ex_machina, "~> 2.3"},
       {:dialyxir, "~> 1.0.0-rc.6", only: [:dev], runtime: false},
       {:propcheck, "~> 1.1", only: [:test, :dev]}

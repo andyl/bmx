@@ -11,7 +11,6 @@ defmodule Bmx01.Dm.Issue do
   schema "issues" do
     field(:type, :string)
     field(:uuid, :string)
-    field(:name, :string)
     field(:exid, :string)
     field(:jfields, :map)
     statement_fields()
@@ -21,8 +20,8 @@ defmodule Bmx01.Dm.Issue do
   end
 
   def changeset(issue, attrs) do
-    required_fields = [:type, :name, :exid]
-    optional_fields = [:uuid, :jfields]
+    required_fields = [:type, :exid]
+    optional_fields = [:uuid, :jfields, :tracker_id]
 
     issue
     |> cast(attrs, required_fields ++ optional_fields)

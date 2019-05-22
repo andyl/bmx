@@ -12,9 +12,9 @@ defmodule Bmx01.Factory do
 
   def issue_factory do
     %Issue{
-      name: "asdf",
       exid: "qwer",
-      type: "ZZZ"
+      type: "ZZZ" ,
+      tracker: insert(:tracker)
     }
   end
 

@@ -25,6 +25,7 @@ defmodule Bmx01.Repo.Migrations.BaseMigration do
       add(:sequence, :integer)
       add(:jfields, :map, default: "{}")
       add(:synced_at, :utc_datetime)
+      add(:tracker_id, references(:trackers), null: false)
       statements()
       timestamps()
     end
@@ -62,6 +63,7 @@ defmodule Bmx01.Repo.Migrations.BaseMigration do
       add(:expiration, :utc_datetime)
       add(:maturation_range, :tsrange)
       add(:jfields, :map, default: "{}")
+      statements()
       timestamps()
     end
 
@@ -79,6 +81,7 @@ defmodule Bmx01.Repo.Migrations.BaseMigration do
       add(:awarded_to, :string)
       add(:maturation, :utc_datetime)
       add(:jfields, :map, default: "{}")
+      statements()
       timestamps()
     end
 

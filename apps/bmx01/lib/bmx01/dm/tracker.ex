@@ -9,6 +9,7 @@ defmodule Bmx01.Dm.Tracker do
   For each Tracker, there are multiple Issues.
   """
   use Ecto.Schema
+  use Bmx01.Ecto.Schema
   import Ecto.Changeset
 
   schema "trackers" do
@@ -17,6 +18,7 @@ defmodule Bmx01.Dm.Tracker do
     field(:name, :string)
     field(:exid, :string)
     field(:jfields, :map)
+    statement_fields()
     timestamps()
   end
 

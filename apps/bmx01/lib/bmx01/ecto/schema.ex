@@ -24,8 +24,15 @@ defmodule Bmx01.Ecto.Schema do
   """
   defmacro statement_fields do
     quote do
-      Ecto.Schema.__field__(__MODULE__, unquote(:stm_title), unquote(:string))
-      Ecto.Schema.__field__(__MODULE__, unquote(:stm_asdf), unquote(:string))
+      field(:stm_title, :string)
+      field(:stm_asdf, :string)
+    end
+  end
+
+  @doc false
+  defmacro __using__(_) do
+    quote do
+      import Bmx01.Ecto.Schema
     end
   end
 end

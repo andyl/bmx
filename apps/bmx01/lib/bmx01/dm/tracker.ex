@@ -18,7 +18,7 @@ defmodule Bmx01.Dm.Tracker do
     field(:name, :string)
     field(:exid, :string)
     field(:jfields, :map)
-    timestamps()
+    timestamps(type: :utc_datetime)
 
     has_many(:issues, Bmx01.Dm.Issue)
   end

@@ -24,8 +24,14 @@ defmodule Bmx.Umbrella.MixProject do
 
   defp docs do
     [
-      logo: ["img/bugmark_logo.png"],
-      extras: ["README.md"]
+      main: "readme",
+      logo: ["assets/bugmark_logo.png"],
+      assets: "assets",
+      extra_section: "GUIDES",
+      extras: [
+        "README.md",
+        "guides/intro.md"
+      ],
     ]
   end
 end

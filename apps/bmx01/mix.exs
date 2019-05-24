@@ -38,6 +38,8 @@ defmodule Bmx01.MixProject do
       # CQRS
       # {:commanded, "~> 0.18"},
       # {:eventstore, "~> 0.16"},
+      # {:commanded_ecto_projections, "~> 0.8"},
+      # {:commanded_eventstore_adapter, "~> 0.5"},
       # UTIL
       {:jason, "~> 1.1"},
       {:telemetry, "~> 0.3"},

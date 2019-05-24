@@ -14,7 +14,7 @@ defmodule Bmx01.Dm.Issue do
     field(:exid, :string)
     field(:jfields, :map)
     statement_fields()
-    timestamps()
+    timestamps(type: :utc_datetime)
 
     belongs_to(:tracker, Bmx01.Dm.Tracker)
   end

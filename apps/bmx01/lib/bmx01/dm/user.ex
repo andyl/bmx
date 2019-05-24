@@ -11,7 +11,7 @@ defmodule Bmx01.Dm.User do
     field(:mobile, Bmx01.Ecto.PhoneNum)
     field(:exid, :string)
     field(:jfields, :map)
-    timestamps()
+    timestamps(type: :utc_datetime)
   end
 
   def changeset(tracker, attrs) do

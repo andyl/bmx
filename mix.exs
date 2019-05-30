@@ -18,6 +18,7 @@ defmodule Bmx.Umbrella.MixProject do
       {:ex_doc, "~> 0.19", only: :dev, runtime: false},
       {:mix_test_watch, "~> 0.8", only: :dev, runtime: false},
       {:distillery, "~> 2.0"},
+      {:recon_ex, "~> 0.9"},
       {:ex_guard, "~> 1.3", only: :dev}
     ]
   end

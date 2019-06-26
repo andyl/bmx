@@ -60,7 +60,9 @@ config :bmx_web, BmxWeb.Endpoint,
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/bmx_web/{live,views}/.*(ex)$",
+      ~r"lib/bmx_web/live/.*(ex)$",
+      ~r"lib/bmx_web/views/.*(ex)$",
+      ~r"lib/bmx_web/templates/.*(leex)$",
       ~r"lib/bmx_web/templates/.*(eex)$"
     ]
   ]

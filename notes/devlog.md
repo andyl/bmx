@@ -6,8 +6,10 @@
 - [x] Add Timex (bmx01 and bmx_web)
 - [x] Add LiveView (bmx_web)
 - [x] Get phoenix working
+- [x] Configure Bootstrap
+- [x] Add demo pages
+- [x] Configure ActiveLink 
 
-- [ ] Configure Bootstrap
 - [ ] Configure LiveView
 
 - [ ] Build Release

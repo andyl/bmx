@@ -22,8 +22,9 @@ config :bmx_web, BmxWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "ORcE+KhIl85f35XtuF4pvpUmvIayHw1P2AFx7Ij4uysYaoH2P/2ElY4AZM3xcti3",
   render_errors: [view: BmxWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: BmxWeb.PubSub, adapter: Phoenix.PubSub.PG2]
-
+  pubsub: [name: BmxWeb.PubSub, adapter: Phoenix.PubSub.PG2],
+  live_view: [ signing_salt: "asdfqwerzxcv" ]
+  
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",

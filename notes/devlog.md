@@ -13,8 +13,11 @@
 
 - [ ] Build Release
 - [ ] Build Docker
+
 - [ ] Host Docs
 - [ ] Host Docker Image
+
+- [ ] Add GraphQL HelloWorld
 
 ## TBD
 

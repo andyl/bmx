@@ -9,7 +9,8 @@ defmodule Bmx.Umbrella.MixProject do
       name: "BMX",
       source_url: "https://github.com/andyl/bmx",
       homepage_url: "https://bugmark.net",
-      docs: docs()
+      docs: docs(),
+      releases: releases()
     ]
   end
 
@@ -36,6 +37,21 @@ defmodule Bmx.Umbrella.MixProject do
       extras: [
         "README.md",
         "guides/intro.md"
+      ]
+    ]
+  end
+
+  defp releases do
+    [
+      base: [
+        applications: [bmx01: :permanent, bmx_web: :permanent],
+        version: "0.0.1"
+      ],
+      bmx01: [
+        applications: [bmx01: :permanent]
+      ],
+      bmx01_web: [
+        applications: [bmx01_web: :permanent]
       ]
     ]
   end

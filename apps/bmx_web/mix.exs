@@ -40,7 +40,6 @@ defmodule BmxWeb.MixProject do
       # ----- phoenix backend
       {:phoenix, "~> 1.4.4"},
       {:phoenix_pubsub, "~> 1.1"},
-      # {:phoenix_ecto, "~> 4.0"},
       {:phoenix_html, "~> 2.11"},
       {:plug_cowboy, "~> 2.0"},
       # ----- phoenix view helpers 
@@ -62,6 +61,5 @@ defmodule BmxWeb.MixProject do
   #
   # See the documentation for `Mix` for more info on aliases.
   defp aliases do
-    [test: ["ecto.create --quiet", "ecto.migrate", "test"]]
   end
 end

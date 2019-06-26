@@ -47,6 +47,10 @@ defmodule Bmx.Umbrella.MixProject do
         applications: [bmx01: :permanent, bmx_web: :permanent],
         version: "0.0.1"
       ],
+      all: [
+        applications: [bmx_web: :permanent],
+        version: "0.0.1"
+      ],
       bmx01: [
         applications: [bmx01: :permanent]
       ],

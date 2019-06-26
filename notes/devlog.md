@@ -9,10 +9,10 @@
 - [x] Configure Bootstrap
 - [x] Add demo pages
 - [x] Configure ActiveLink 
-
-- [ ] Configure LiveView
+- [x] Configure LiveView
 
 - [ ] Build Release
+- [ ] Build Docker
 - [ ] Host Docs
 - [ ] Host Docker Image
 

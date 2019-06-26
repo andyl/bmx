@@ -1,10 +1,21 @@
 # BMX DevLog
 
+## 2019-Jun-19 WED
+
+- [x] Upgrade to 1.9
+- [x] Add Timex (bmx01 and bmx_web)
+- [x] Add LiveView (bmx_web)
+- [x] Get phoenix working
+
+- [ ] Configure Bootstrap
+- [ ] Configure LiveView
+
+- [ ] Build Release
+- [ ] Host Docs
+- [ ] Host Docker Image
+
 ## TBD
 
-- [ ] Upgrade to 1.9
-- [ ] Add Timex (bmx01 and bmx_web)
-- [ ] Add LiveView (bmx_web)
 - [ ] Prototype DSL
 
 ## Roadmap

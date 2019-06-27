@@ -16,6 +16,8 @@ defmodule Bmx.Umbrella.MixProject do
 
   defp deps do
     [
+      # ----- deployment
+      {:distillery, "~> 2.1"},
       # ----- monitoring and tracing
       {:recon_ex, "~> 0.9"},
       # ----- static analyzers

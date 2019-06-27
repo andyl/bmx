@@ -19,11 +19,14 @@ config :bmx_web,
 
 # Configures the endpoint
 config :bmx_web, BmxWeb.Endpoint,
-  url: [host: "localhost"],
-  secret_key_base: "ORcE+KhIl85f35XtuF4pvpUmvIayHw1P2AFx7Ij4uysYaoH2P/2ElY4AZM3xcti3",
+  url: [host: "localhost", port: 8888],
+  secret_key_base: "asdf",
   render_errors: [view: BmxWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: BmxWeb.PubSub, adapter: Phoenix.PubSub.PG2],
-  live_view: [ signing_salt: "asdfqwerzxcv" ]
+  live_view: [ signing_salt: "asdf" ],
+  cache_static_manifest: "priv/static/cache_manifest.json",
+  server: true,
+  root: "."
   
 # Configures Elixir's Logger
 config :logger, :console,

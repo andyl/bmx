@@ -50,7 +50,7 @@ defmodule BmxWeb.MixProject do
       {:jason, "~> 1.0"},
       {:timex, "~> 3.1"},
       # ----- data-access components
-      {:bmx01, in_umbrella: true},
+      # {:bmx01, in_umbrella: true},
       # ----- development and test
       {:phoenix_live_reload, "~> 1.2", only: :dev}
     ]

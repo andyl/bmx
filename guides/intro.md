@@ -1,3 +1,3 @@
-# Bmx Guides
+# BMX Guides
 
 UNDER CONSTRUCTION

@@ -18,6 +18,7 @@ defmodule Bmx.Umbrella.MixProject do
     [
       # ----- deployment
       {:distillery, "~> 2.1"},
+      {:edeliver, ">= 1.6.0"},
       # ----- monitoring and tracing
       {:recon_ex, "~> 0.9"},
       # ----- static analyzers
@@ -46,7 +47,7 @@ defmodule Bmx.Umbrella.MixProject do
   defp releases do
     [
       base: [
-        applications: [bmx01: :permanent, bmx_web: :permanent],
+        applications: [bmx_web: :permanent],
         version: "0.0.1"
       ],
       all: [

@@ -5,13 +5,20 @@ elixir:
   - 1.9.0
 otp_release:
   - 22.0.1
-matrix:
-  fast_finish: true
 addons:
-  postgresql: '11.0'
+  postgresql: "11.2"
 services:
   - postgresql
+matrix:
+  fast_finish: true
+before_install:
+  - sudo apt-get update
+  - sudo apt-get --yes remove postgresql\*
+  - sudo apt-get install -y postgresql-11 postgresql-client-11
+  - sudo cp /etc/postgresql/{9.6,11}/main/pg_hba.conf
+  - sudo service postgresql restart 11  
 before_script:
+  - psql --version
   - ps aux | grep postgres
   - which pg_isready
   - pg_isready

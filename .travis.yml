@@ -1,4 +1,6 @@
 language: elixir
+env:
+  - TRAVIS=true
 elixir:
   - 1.9.0
 otp_release:
@@ -10,7 +12,9 @@ addons:
 services:
   - postgresql
 before_script:
-  - cp config/travis.exs config/test.exs
+  - ps aux | grep postgres
+  - which pg_isready
+  - pg_isready
   - MIX_ENV=test mix ecto.create
   - MIX_ENV=test mix ecto.migrate
 script:

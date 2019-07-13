@@ -16,3 +16,5 @@ config :bmx_web, BmxWeb.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
+
+if System.get_env("TRAVIS") == "true", do: import_config "travis.exs"

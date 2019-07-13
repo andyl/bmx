@@ -11,9 +11,9 @@ services:
   - postgresql
 before_script:
   - cp config/travis.exs config/test.exs
-  - mix ecto.create
-  - mix ecto.migrate
+  - MIX_ENV=test mix ecto.create
+  - MIX_ENV=test mix ecto.migrate
 script:
-  - mix test
+  - MIX_ENV=test mix test
 after_success:
   - MIX_ENV=dev mix credo

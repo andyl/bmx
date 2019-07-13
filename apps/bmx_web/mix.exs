@@ -4,12 +4,12 @@ defmodule BmxWeb.MixProject do
   def project do
     [
       app: :bmx_web,
-      version: "0.1.0",
+      version: "0.0.1",
       build_path: "../../_build",
       config_path: "../../config/config.exs",
       deps_path: "../../deps",
       lockfile: "../../mix.lock",
-      elixir: "~> 1.5",
+      elixir: "~> 1.9",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
@@ -37,15 +37,22 @@ defmodule BmxWeb.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      # ----- phoenix backend
       {:phoenix, "~> 1.4.4"},
       {:phoenix_pubsub, "~> 1.1"},
-      {:phoenix_ecto, "~> 4.0"},
       {:phoenix_html, "~> 2.11"},
-      {:phoenix_live_reload, "~> 1.2", only: :dev},
+      {:plug_cowboy, "~> 2.0"},
+      # ----- phoenix view helpers 
+      {:phoenix_live_view, github: "phoenixframework/phoenix_live_view"},
+      {:phoenix_active_link, "~> 0.2.1"},
       {:gettext, "~> 0.11"},
-      {:bmx01, in_umbrella: true},
+      # ----- util
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:timex, "~> 3.1"},
+      # ----- data-access components
+      # {:bmx01, in_umbrella: true},
+      # ----- development and test
+      {:phoenix_live_reload, "~> 1.2", only: :dev}
     ]
   end
 
@@ -54,6 +61,5 @@ defmodule BmxWeb.MixProject do
   #
   # See the documentation for `Mix` for more info on aliases.
   defp aliases do
-    [test: ["ecto.create --quiet", "ecto.migrate", "test"]]
   end
 end

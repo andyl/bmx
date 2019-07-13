@@ -4,12 +4,12 @@ defmodule Bmx01.MixProject do
   def project do
     [
       app: :bmx01,
-      version: "0.1.0",
+      version: "0.0.1",
       build_path: "../../_build",
       config_path: "../../config/config.exs",
       deps_path: "../../deps",
       lockfile: "../../mix.lock",
-      elixir: "~> 1.8",
+      elixir: "~> 1.9",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
@@ -31,22 +31,23 @@ defmodule Bmx01.MixProject do
 
   defp deps do
     [
-      # DATABASE
+      # ----- database
       {:ecto_sql, "~> 3.0"},
       {:postgrex, ">= 0.0.0"},
       {:pg_ranges, "~> 0.1.0"},
-      # CQRS
+      # ----- util
+      {:jason, "~> 1.1"},
+      {:telemetry, "~> 0.3"},
+      {:timex, "~> 3.1"},
+      # ----- testing
+      {:ex_machina, "~> 2.3"},
+      {:dialyxir, "~> 1.0.0-rc.6", only: [:dev], runtime: false},
+      {:propcheck, "~> 1.1", only: [:test, :dev]}
+      # ----- cqrs
       # {:commanded, "~> 0.18"},
       # {:eventstore, "~> 0.16"},
       # {:commanded_ecto_projections, "~> 0.8"},
       # {:commanded_eventstore_adapter, "~> 0.5"},
-      # UTIL
-      {:jason, "~> 1.1"},
-      {:telemetry, "~> 0.3"},
-      # TESTING
-      {:ex_machina, "~> 2.3"},
-      {:dialyxir, "~> 1.0.0-rc.6", only: [:dev], runtime: false},
-      {:propcheck, "~> 1.1", only: [:test, :dev]}
     ]
   end
 

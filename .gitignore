@@ -8,6 +8,10 @@ _build/
 .elixir_ls/
 /.elixir_ls/
 /tmp/
+/rel/
+/rel/*
+rel/
+rel/*
 /node_modules
 /assets/node_modules
 /installer/_build

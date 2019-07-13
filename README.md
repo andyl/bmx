@@ -31,5 +31,5 @@ of efficient allocation of resources to areas of critical need.
 
 ## Status
 
-This release of BMX is UNDER CONSTRUCTION.  Expected release Summer 2019.
+This release of BMX is UNDER CONSTRUCTION.  Expected release Fall 2019.
 

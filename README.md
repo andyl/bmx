@@ -22,7 +22,7 @@ as a public SAAS, and is also available to download for experiments and private
 exchanges.  The primary interface for BMX is a GraphQL API, and there is also
 an HTML UI for administration.
 
-BMX is packaged as a Docker Image and a standalone executable.
+BMX is released as a Docker Image.
 
 ## Market Signals
 

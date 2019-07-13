@@ -5,5 +5,14 @@ otp_release:
   - 22.0.1
 matrix:
   fast_finish: true
+addons:
+  postgresql: '11.0'
+services:
+  - postgresql
+before_script:
+  - cp config/travis.exs config/test.exs
+  - mix do ecto.create, ecto.migrate
+script:
+  - mix test
 after_success:
   - MIX_ENV=dev mix credo

@@ -38,6 +38,7 @@ RUN mix do deps.get, deps.compile
 #     npm run deploy && \
 #     cd - && \
 #     mix do compile, phx.digest
+#
 
 RUN mix do compile, phx.digest
 

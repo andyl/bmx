@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+echo '>>> docker run'
+echo "access using 'localhost:8050'"
+
+docker run -p 8050:4050 bmx

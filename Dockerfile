@@ -1,47 +1,23 @@
-# To build:
-# 
-#     $ docker build . -t bugmark/bmx
+# >>>>>> LocalTest
+# Build: docker build -t bmx .
+# Run:   docker run -p 8050:4050 bmx 
 #
-# To push:
-#
-#     $ docker login
-#     $ docker push
-#
-# To run:
-#
-#     $ docker run -p 4000:4000 bugmark/bmx
-#
-# To run with `nginx_proxy`
-#
-#     $ docker run -p 4000:4000 -e VIRTUAL_HOST=bmx.yourdomain bugmark/bmx
-#
+# >>>>>> DockerHub
+# Build: docker build -t <yourname>/bmx .
+# Login: docker login -u <yourname>
+# Push:  docker push <yourname>/bmx
+# Run:   docker run -p 8050:4050 <yourname>/bmx
 
-FROM bitwalker/alpine-elixir-phoenix:latest
+FROM elixir:1.9
 
-# Set exposed ports
-EXPOSE 4000
-ENV PORT=4000 MIX_ENV=prod
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+ENV MIX_ENV=prod
 
-ADD . .
+WORKDIR /app
 
-# Cache elixir deps
-ADD mix.exs mix.lock ./
-RUN mix do deps.get, deps.compile
+COPY _build/prod/rel/bmx /app/
 
-# Same with npm deps
-# ADD app/bmx_web/assets/package.json assets/
-# RUN cd app/bmx_web/assets && \
-#     npm install
+EXPOSE 4050
 
-# Run frontend build, compile, and digest assets
-# RUN cd assets/ && \
-#     npm run deploy && \
-#     cd - && \
-#     mix do compile, phx.digest
-#
-
-RUN mix do compile, phx.digest
-
-USER default
-
-CMD ["mix", "phx.server"]
+CMD /app/bin/bmx foreground

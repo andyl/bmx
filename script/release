@@ -1,5 +1,16 @@
-#!/usr/bin/env bash
+#/usr/bin/env bash
 
-# MIX_ENV=prod DATABASE_URL=ecto://postgres:postgres@localhost/bmx01_prod SECRET_KEY_BASE=asdf mix release base
-MIX_ENV=prod DATABASE_URL=ecto://postgres:postgres@localhost/bmx01_prod SECRET_KEY_BASE=asdf mix distillery.release
+echo '>>> package assets'
+cd apps/bmx_web
+npm run deploy --prefix assets
+cd ../..
+
+echo '>>> digest assets'
+MIX_ENV=prod mix phx.digest
+
+echo '>>> create release'
+MIX_ENV=prod mix distillery.release 
+
+echo '>>> done'
+echo "Build the docker image with 'script/dk_build'"
 

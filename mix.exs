@@ -13,6 +13,13 @@ defmodule Bmx.Umbrella.MixProject do
     ]
   end
 
+  def application do
+    [
+      extra_applications: [:logger],
+      mod: {BmxWeb.Application, []}
+    ]
+  end
+
   defp deps do
     [
       # ----- deployment
@@ -42,22 +49,4 @@ defmodule Bmx.Umbrella.MixProject do
     ]
   end
 
-  # defp releases do
-  #   [
-  #     base: [
-  #       applications: [bmx_web: :permanent],
-  #       version: "0.0.1"
-  #     ],
-  #     all: [
-  #       applications: [bmx_web: :permanent],
-  #       version: "0.0.1"
-  #     ],
-  #     bmx01: [
-  #       applications: [bmx01: :permanent]
-  #     ],
-  #     bmx01_web: [
-  #       applications: [bmx01_web: :permanent]
-  #     ]
-  #   ]
-  # end
 end

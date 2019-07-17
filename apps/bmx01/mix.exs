@@ -42,7 +42,9 @@ defmodule Bmx01.MixProject do
       # ----- testing
       {:ex_machina, "~> 2.3"},
       {:dialyxir, "~> 1.0.0-rc.6", only: [:dev], runtime: false},
-      {:propcheck, "~> 1.1", only: [:test, :dev]}
+      {:propcheck, "~> 1.1", only: [:test, :dev]},
+      # ----- data valiation
+      {:vex, "~> 0.8.0"}
       # ----- cqrs
       # {:commanded, "~> 0.18"},
       # {:eventstore, "~> 0.16"},

@@ -1,7 +1,7 @@
 #/usr/bin/env bash
 
 echo '>>> package assets'
-cd apps/marcom
+cd apps/bmx_marcom
 npm run deploy --prefix assets
 cd ../..
 
@@ -9,7 +9,7 @@ echo '>>> digest assets'
 MIX_ENV=prod mix phx.digest
 
 echo '>>> create release'
-MIX_ENV=prod mix distillery.release --name=marcom
+MIX_ENV=prod mix distillery.release --name=bmx_marcom
 
 echo '>>> done'
 echo "Build the docker image with 'script/dk_build'"

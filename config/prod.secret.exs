@@ -11,7 +11,7 @@ secret_key_base = "asdf"
 
 # ----- MARCOM
 
-config :marcom, Marcom.Endpoint,
+config :bmx_marcom, BmxMarcom.Endpoint,
   http: [:inet6, port: String.to_integer(System.get_env("PORT") || "4040")],
   secret_key_base: secret_key_base
 

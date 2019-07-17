@@ -22,6 +22,10 @@ defmodule Marcom.Router do
     get "/logs",  HomeController, :logs
     get "/stats", HomeController, :stats
 
+    get "/resources",     HomeController, :resources
+    get "/architecture",  HomeController, :architecture
+    get "/roadmap",       HomeController, :roadmap
+
     live "/demo", Demo
   end
 

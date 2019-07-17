@@ -5,6 +5,7 @@ use Mix.Config
 config :marcom, Marcom.Endpoint,
   url: [host: "example.com", port: 4015],
   cache_static_manifest: "priv/static/cache_manifest.json",
+  check_origin: false,
   server: true
 
 # ## SSL Support
@@ -56,6 +57,7 @@ config :marcom, Marcom.Endpoint,
 config :bmx_web, BmxWeb.Endpoint,
   url: [host: "localhost", port: 4025],
   cache_static_manifest: "priv/static/cache_manifest.json",
+  check_origin: false,
   server: true,
   root: ".",
   version: Application.spec(:phoenix_distillery, :vsn)

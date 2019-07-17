@@ -1,11 +1,12 @@
 use Mix.Config
 
-# ----- MARCOM
-
 config :marcom, Marcom.Endpoint,
-  url: [host: "example.com", port: 4015],
+  url: [host: "localhost", port: 4000],
   cache_static_manifest: "priv/static/cache_manifest.json",
   server: true
+
+# Do not print debug messages in production
+config :logger, level: :info
 
 # ## SSL Support
 #
@@ -51,19 +52,6 @@ config :marcom, Marcom.Endpoint,
 # Then you can assemble a release by calling `mix release`.
 # See `mix help release` for more information.
 
-# ----- BMX_WEB
-
-config :bmx_web, BmxWeb.Endpoint,
-  url: [host: "localhost", port: 4025],
-  cache_static_manifest: "priv/static/cache_manifest.json",
-  server: true,
-  root: ".",
-  version: Application.spec(:phoenix_distillery, :vsn)
-
-# ----- LOGGER
-
-config :logger, level: :info
-
-# ----- IMPORTS
-
+# Finally import the config/prod.secret.exs which loads secrets
+# and configuration from environment variables.
 import_config "prod.secret.exs"

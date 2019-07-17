@@ -51,11 +51,11 @@ release :bmx do
   ]
 end
 
-release :marcom do
+release :bmx_marcom do
   set version: "0.0.1"
   set applications: [
     :runtime_tools,
-    marcom: :permanent
+    bmx_marcom: :permanent
   ]
 end
 

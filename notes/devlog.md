@@ -190,7 +190,7 @@
 
 - [ ] DevOps / Distillery support for Ecto
 - [ ] DevOps / Docker/bmx01 support for Ecto (docker-compose)
-- [ ] DevOps / Docker/marcom to bma.bugmark.techb
+- [ ] DevOps / Docker/bmx_marcom to bma.bugmark.techb
 - [ ] DevOps / Edeliver to a local VM cluster (hot updates with second clock)
 - [ ] DevOps / Hot Upgrades
 

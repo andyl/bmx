@@ -2,7 +2,7 @@ use Mix.Config
 
 # ----- MARCOM
 
-config :marcom, Marcom.Endpoint,
+config :bmx_marcom, BmxMarcom.Endpoint,
   http: [port: 4010],
   debug_errors: true,
   code_reloader: true,
@@ -13,17 +13,17 @@ config :marcom, Marcom.Endpoint,
       "--mode",
       "development",
       "--watch-stdin",
-      cd: Path.expand("../apps/marcom/assets", __DIR__)
+      cd: Path.expand("../apps/bmx_marcom/assets", __DIR__)
     ]
   ]
 
-config :marcom, Marcom.Endpoint,
+config :bmx_marcom, BmxMarcom.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/marcom/{live,views}/.*(ex)$",
-      ~r"lib/marcom/templates/.*(eex)$"
+      ~r"lib/bmx_marcom/{live,views}/.*(ex)$",
+      ~r"lib/bmx_marcom/templates/.*(eex)$"
     ]
   ]
 

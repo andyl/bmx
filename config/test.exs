@@ -2,7 +2,7 @@ use Mix.Config
 
 # ----- MARCOM
 
-config :marcom, Marcom.Endpoint,
+config :bmx_marcom, BmxMarcom.Endpoint,
   http: [port: 4001],
   server: false
 

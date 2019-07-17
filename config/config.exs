@@ -2,19 +2,19 @@ use Mix.Config
 
 # ----- MARCOM
 
-config :marcom,
+config :bmx_marcom,
   generators: [context_app: false]
 
-config :marcom, Marcom.Endpoint,
+config :bmx_marcom, BmxMarcom.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "qwer",
-  render_errors: [view: Marcom.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Marcom.PubSub, adapter: Phoenix.PubSub.PG2],
+  render_errors: [view: BmxMarcom.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: BmxMarcom.PubSub, adapter: Phoenix.PubSub.PG2],
   cache_static_manifest: "priv/static/cache_manifest.json",
   server: true,
   root: "."
 
-config :marcom, Marcom.Endpoint, live_view: [signing_salt: "asdf"]
+config :bmx_marcom, BmxMarcom.Endpoint, live_view: [signing_salt: "asdf"]
 
 # ----- BMX_WEB
 

@@ -4,22 +4,20 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Marcom</title>
+    <title>Bugmark2</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   </head>
   <body style='padding-top: 70px;'>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="/">Marcom</a>
+      <a class="navbar-brand" href="/">Bugmark2</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <%= hdr_link(@conn, "URLS", "/urls") %>
-          <%= hdr_link(@conn, "LOGS", "/logs") %>
-          <%= hdr_link(@conn, "STATS", "/stats") %>
+          <%= hdr_link(@conn, "Resources", "/resources") %>
         </ul>
         <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
           <li class="text-white"><%= live_render(@conn, Marcom.TimeLcl) %></li>
@@ -38,7 +36,7 @@
         <hr>
         <small>
         <ul class="nav justify-content-center">
-          <%= ftr_link(@conn, "Demo", "/demo") %>
+          <%= ftr_link(@conn, "LiveView Demo", "/demo") %>
         </ul>
         </small>
     </div>

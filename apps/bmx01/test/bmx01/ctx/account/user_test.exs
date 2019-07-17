@@ -1,7 +1,7 @@
-defmodule Bmx01.Dm.UserTest do 
+defmodule Bmx01.Ctx.Account.UserTest do 
   use ExUnit.Case, async: true
   alias Bmx01.Repo
-  alias Bmx01.Dm.User
+  alias Bmx01.Ctx.Account.User
   import Ecto.Query, only: [from: 2]
   import Bmx01.Factory
 

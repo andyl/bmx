@@ -162,19 +162,30 @@
 ## 2019-Jul-17 Wed 
 
 - [x] Rename `marcom` to `bmx_marcom`
+- [x] Add Bmx01.Sys.Host
+- [x] Add Bmx01.Sys.Time
+- [x] Add Bmx01.Sys.Seed
 
-- [ ] Users, Offers, Contracts, etc.
-- [ ] System Reset
+- [ ] Create user resource (add, remove, update, list)
+
+- [ ] Add Bmx01.Sys.Host.reset()
+- [ ] Add Bmx01.Sys.Host.seed()
+
+- [ ] Cmd::UserCreate
+- [ ] Cmd::UserUpdate
+
+## Roadmap
+
+- [ ] Sys, Users, Offers, Contracts, etc.
 - [ ] Setup commands
 - [ ] Admin UI
 - [ ] Full GraphQL (binary options)
-
-## Roadmap
 
 - [ ] Web / Admin
 - [ ] Web / GraphQL
 - [ ] Web / Monitor
 - [ ] Web / BaseUI
+
 
 - [ ] CLI / Admin Dashboard (Ratatouille)
 
@@ -185,6 +196,9 @@
 
 - [ ] Security / Code Signing
 - [ ] Security / Exchange Subscriptions & Trading Fees
+
+- [ ] Admin / Identification
+- [ ] Admin / Permissions
 
 - [ ] PayPro / Pluggable Processors
 

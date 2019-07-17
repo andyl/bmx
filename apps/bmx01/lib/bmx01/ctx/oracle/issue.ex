@@ -1,4 +1,4 @@
-defmodule Bmx01.Dm.Issue do
+defmodule Bmx01.Ctx.Oracle.Issue do
   @moduledoc ~S"""
   Issue DataModel.
 
@@ -16,8 +16,8 @@ defmodule Bmx01.Dm.Issue do
     statement_fields()
     timestamps(type: :utc_datetime)
 
-    belongs_to(:tracker, Bmx01.Dm.Tracker)
-  end
+    belongs_to(:tracker, Bmx01.Ctx.Oracle.Tracker)
+  end 
 
   def changeset(issue, attrs) do
     required_fields = [:type, :exid]

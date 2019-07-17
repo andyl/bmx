@@ -1,6 +1,7 @@
 defmodule Bmx01.Factory do
   use ExMachina.Ecto, repo: Bmx01.Repo
-  alias Bmx01.Dm.{Tracker, User, Issue}
+  alias Bmx01.Ctx.Oracle.{Tracker, Issue}
+  alias Bmx01.Ctx.Account.{User}
 
   def tracker_factory do
     %Tracker{

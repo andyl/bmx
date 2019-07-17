@@ -12,7 +12,7 @@ secret_key_base = "asdf"
 # ----- MARCOM
 
 config :bmx_marcom, BmxMarcom.Endpoint,
-  http: [:inet6, port: String.to_integer(System.get_env("PORT") || "4040")],
+  http: [:inet6, port: String.to_integer(System.get_env("PORT") || "4015")],
   secret_key_base: secret_key_base
 
 # secret_key_base =
@@ -25,7 +25,7 @@ config :bmx_marcom, BmxMarcom.Endpoint,
 # ----- BMX_WEB
 
 config :bmx_web, BmxWeb.Endpoint,
-  http: [:inet6, port: String.to_integer(System.get_env("PORT") || "4050")],
+  http: [:inet6, port: String.to_integer(System.get_env("PORT") || "4025")],
   secret_key_base: secret_key_base
 
 # database_url =

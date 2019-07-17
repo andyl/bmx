@@ -1,4 +1,4 @@
-defmodule Bmx01.Dm.User do
+defmodule Bmx01.Ctx.Account.User do
   @moduledoc """
   User DataModel.
   """

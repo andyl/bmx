@@ -1,4 +1,4 @@
-defmodule Bmx01.Dm.Tracker do
+defmodule Bmx01.Ctx.Oracle.Tracker do
   @moduledoc """
   Tracker DataModel.
 
@@ -20,7 +20,7 @@ defmodule Bmx01.Dm.Tracker do
     field(:jfields, :map)
     timestamps(type: :utc_datetime)
 
-    has_many(:issues, Bmx01.Dm.Issue)
+    has_many(:issues, Bmx01.Ctx.Oracle.Issue)
   end
 
   def changeset(tracker, attrs) do

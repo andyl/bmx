@@ -74,4 +74,15 @@ defmodule Bmx01.Ctx.Account.UserTest do
       assert trak.name == altname
     end
   end
+
+  describe "deleting records" do
+    test "all users" do
+      cqry = from(t in "users", select: count(t.id))
+      assert Repo.one(cqry) == 0
+      insert(:user)
+      assert Repo.one(cqry) == 1
+      Repo.delete_all(User)
+      assert Repo.one(cqry) == 0
+    end
+  end
 end

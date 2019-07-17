@@ -161,8 +161,10 @@
 
 ## 2019-Jul-17 Wed 
 
+- [x] Rename `marcom` to `bmx_marcom`
+
 - [ ] Users, Offers, Contracts, etc.
-- [ ] Reset
+- [ ] System Reset
 - [ ] Setup commands
 - [ ] Admin UI
 - [ ] Full GraphQL (binary options)

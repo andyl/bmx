@@ -1,25 +1,29 @@
-# This file is responsible for configuring your umbrella
-# and **all applications** and their dependencies with the
-# help of Mix.Config.
-#
-# Note that all applications in your umbrella share the
-# same configuration and dependencies, which is why they
-# all use the same configuration file. If you want different
-# configurations or dependencies per app, it is best to
-# move said applications out of the umbrella.
 use Mix.Config
 
-# Configure Mix tasks and generators
-config :bmx01,
-  ecto_repos: [Bmx01.Repo]
+# ----- MARCOM
+
+config :marcom,
+  generators: [context_app: false]
+
+config :marcom, Marcom.Endpoint,
+  url: [host: "localhost"],
+  secret_key_base: "qwer",
+  render_errors: [view: Marcom.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: Marcom.PubSub, adapter: Phoenix.PubSub.PG2],
+  cache_static_manifest: "priv/static/cache_manifest.json",
+  server: true,
+  root: "."
+
+config :marcom, Marcom.Endpoint, live_view: [signing_salt: "asdf"]
+
+# ----- BMX_WEB
 
 config :bmx_web,
   ecto_repos: [Bmx01.Repo],
   generators: [context_app: :bmx]
 
-# Configures the endpoint
 config :bmx_web, BmxWeb.Endpoint,
-  url: [host: "localhost", port: 8888],
+  url: [host: "localhost"],
   secret_key_base: "asdf",
   render_errors: [view: BmxWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: BmxWeb.PubSub, adapter: Phoenix.PubSub.PG2],
@@ -28,18 +32,29 @@ config :bmx_web, BmxWeb.Endpoint,
   server: true,
   root: "."
   
-# Configures Elixir's Logger
+# ----- BMX01
+
+config :bmx01,
+  ecto_repos: [Bmx01.Repo]
+
+# ----- LOGGER
+
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
 
-# Use Jason for JSON parsing in Phoenix
+# ----- PHOENIX/JSON
+
 config :phoenix, :json_library, Jason
 
-# Import environment specific config. This must remain at the bottom
-# of this file so it overrides the configuration defined above.
+# ----- INCLUDES
+
 import_config "#{Mix.env()}.exs"
+
+# ----- TESTING
 
 if Mix.env == :dev do
   config :mix_test_watch, clear: true
 end
+
+

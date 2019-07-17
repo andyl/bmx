@@ -1,20 +1,30 @@
 use Mix.Config
 
-# Configure your database
+# ----- MARCOM
+
+config :marcom, Marcom.Endpoint,
+  http: [port: 4001],
+  server: false
+
+# ----- BMX_WEB
+
+config :bmx_web, BmxWeb.Endpoint,
+  http: [port: 4002],
+  server: false
+
+# ----- BMX01
+
 config :bmx01, Bmx01.Repo,
   username: "postgres",
   password: "postgres",
   database: "bmx_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+  
+# ----- LOGGER
 
-# We don't run a server during test. If one is required,
-# you can enable the server option below.
-config :bmx_web, BmxWeb.Endpoint,
-  http: [port: 4002],
-  server: false
-
-# Print only warnings and errors during test
 config :logger, level: :warn
+
+# ----- CI
 
 if System.get_env("TRAVIS") == "true", do: import_config "travis.exs"

@@ -2,7 +2,7 @@
   <h1>Bugmark Exchange V2</h1>
   <p>This webapp is a live prototype of Bugmark Exchange V2.</p>
   Source Code
-  <a href="https://github.com/andyl/bma" target="_blank">
+  <a href="https://github.com/andyl/bmx" target="_blank">
   <i class="fab fa-github"></i>
   </a> 
   <span style="margin-left: 75px;"> </span>
@@ -15,22 +15,22 @@
 <div class="row">
   <div class="col-md-6">
     <h2>Background</h2>
-      <ul>
-        <li>Bugmark V1 was a Rails App</li>
-        <li>Great for prototyping and research</li>
-        <li>But slow and difficult to deploy</li>
-        <li>V2 is scalable and simple to operate</li> 
-      </ul>
+    <ul>
+      <li>Bugmark V1 was a Rails App</li>
+      <li>Great for prototyping and research</li>
+      <li>But slow and difficult to deploy</li>
+      <li>V2 is scalable and simple to operate</li> 
+    </ul>
   </div>
 
   <div class="col-md-6">
     <h2>Next Steps</h2>
-      <ul>
-        <li>Adopt scalable tooling (Elixir/Docker)</li>
-        <li>Add GraphQL API</li>
-        <li>Cloud-Deploy as SAAS</li>
-        <li>OnPrem-Deploy via Docker Image</li> 
-      </ul>
+    <ul>
+      <li>Adopt scalable tooling (Elixir/Docker)</li>
+      <li>Add GraphQL API</li>
+      <li>Cloud-Deploy as SAAS</li>
+      <li>OnPrem-Deploy via Docker Image</li> 
+    </ul>
   </div>
 
 </div>

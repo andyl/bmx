@@ -181,7 +181,7 @@
 
 - [x] Add Account context
 - [x] Add tests for account context
-- [x] Clean up BmxWeb
+- [ ] Clean up BmxWeb
 - [ ] Add WebUI (user list, live update, editing)
 
 ## TBD

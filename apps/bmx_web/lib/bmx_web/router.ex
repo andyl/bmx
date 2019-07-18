@@ -25,8 +25,21 @@ defmodule BmxWeb.Router do
     live "/demo", Demo
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", BmxWeb do
-  #   pipe_through :api
-  # end
+  scope "/admin", BmxWeb do
+    pipe_through :browser
+
+    get "/",      AdminController, :index
+    get "/urls",  AdminController, :urls
+    get "/logs",  AdminController, :logs
+    get "/stats", AdminController, :stats
+  end
+
+  scope "/admin_gq", BmxWeb do
+    pipe_through :browser
+
+    get "/",      AdminGqController, :index
+    get "/urls",  AdminGqController, :urls
+    get "/logs",  AdminGqController, :logs
+    get "/stats", AdminGqController, :stats
+  end
 end

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>BMX Web</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   </head>
   <body style='padding-top: 70px;'>
 
@@ -16,9 +17,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <%= hdr_link(@conn, "URLS", "/urls") %>
-          <%= hdr_link(@conn, "LOGS", "/logs") %>
-          <%= hdr_link(@conn, "STATS", "/stats") %>
+          <%= hdr_link(@conn, "Admin"  , "/admin") %>
+          <%= hdr_link(@conn, "AdminGQ", "/admin_gq") %>
         </ul>
         <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
           <li class="text-white"><%= live_render(@conn, BmxWeb.TimeLcl) %></li>

@@ -61,7 +61,7 @@ config :bmx_web, BmxWeb.Endpoint,
 config :bmx01, Bmx01.Repo,
   username: "postgres",
   password: "postgres",
-  database: "bmx_dev",
+  database: "bmx01_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10

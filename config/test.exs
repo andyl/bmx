@@ -17,7 +17,7 @@ config :bmx_web, BmxWeb.Endpoint,
 config :bmx01, Bmx01.Repo,
   username: "postgres",
   password: "postgres",
-  database: "bmx_test",
+  database: "bmx01_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
   

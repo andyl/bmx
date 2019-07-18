@@ -208,7 +208,22 @@ defmodule Bmx01.Repo.Migrations.BaseMigration do
       timestamps()
     end
 
-    # the event store...
+    # tx_log for commands...
+
+    create table("xlog_cmds") do
+      add(:cmd_type, :string)
+      add(:cmd_uuid, :string)
+      add(:local_hash, :string)
+      add(:chain_hash, :string)
+      add(:payload, :map, default: "{}")
+      add(:jfields, :map, default: "{}")
+      add(:user_uuids, :string, default: "[]")
+      add(:tags, :string)
+      add(:note, :string)
+      timestamps()
+    end
+    
+    # tx_log for events...
 
     # inheritance column
     # uuid for the event
@@ -216,7 +231,7 @@ defmodule Bmx01.Repo.Migrations.BaseMigration do
     # uuid of command that created the event
     # [event_uuid, payload].digest
     # [local_hash, chain_hash].digest              
-    create table("events") do
+    create table("xlog_events") do
       add(:event_type, :string)
       add(:event_uuid, :string)
       add(:cmd_type, :string)

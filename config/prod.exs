@@ -62,6 +62,16 @@ config :bmx_web, BmxWeb.Endpoint,
   root: ".",
   version: Application.spec(:phoenix_distillery, :vsn)
 
+# ----- BMX01
+
+config :bmx01, Bmx01.Repo,
+  username: "postgres",
+  password: "postgres",
+  database: "bmx01_test",
+  hostname: "localhost",
+  show_sensitive_data_on_connection_error: true,
+  pool_size: 10
+
 # ----- LOGGER
 
 config :logger, level: :info

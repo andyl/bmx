@@ -165,19 +165,29 @@
 - [x] Add Bmx01.Sys.Host
 - [x] Add Bmx01.Sys.Time
 - [x] Add Bmx01.Sys.Seed
+- [x] Define a layout for read-models
+- [x] Create user resource (add, remove, update, list)
+- [x] Add Bmx01.Sys.Host.reset()
+- [x] Adopt `Vex` to validate command input
+- [x] Add Bmx01.Sys.Data.seed()
+- [x] Cmd::UserCreate
+- [x] Add Data.seed()
+- [x] Add Data.counts()
+- [x] Add CommandLog
+- [x] Setup commands
+- [x] Add UserFactory that uses Command
 
-- [ ] Create user resource (add, remove, update, list)
+## TBD
 
-- [ ] Add Bmx01.Sys.Host.reset()
-- [ ] Add Bmx01.Sys.Host.seed()
-
-- [ ] Cmd::UserCreate
-- [ ] Cmd::UserUpdate
-
-## Roadmap
+- [ ] Add Account context
+- [ ] Add WebUI (user list, live update, editing)
+- [ ] Add Ratatouille (user list, live update)
+- [ ] Add GraphQL (mutation, query)
+- [ ] Add GraphQL Subscription
+- [ ] Add CLI tied to GraphQL (in Ruby)
+- [ ] Add ApolloUI tied to GraphQL Subscription
 
 - [ ] Sys, Users, Offers, Contracts, etc.
-- [ ] Setup commands
 - [ ] Admin UI
 - [ ] Full GraphQL (binary options)
 
@@ -185,7 +195,6 @@
 - [ ] Web / GraphQL
 - [ ] Web / Monitor
 - [ ] Web / BaseUI
-
 
 - [ ] CLI / Admin Dashboard (Ratatouille)
 

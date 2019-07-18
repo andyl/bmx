@@ -177,15 +177,22 @@
 - [x] Setup commands
 - [x] Add UserFactory that uses Command
 
+## 2019-Jul-18 Thu 
+
+- [x] Add Account context
+- [x] Add tests for account context
+- [x] Clean up BmxWeb
+- [ ] Add WebUI (user list, live update, editing)
+
 ## TBD
 
-- [ ] Add Account context
-- [ ] Add WebUI (user list, live update, editing)
+- [ ] Use UUID as element ids
+
 - [ ] Add Ratatouille (user list, live update)
 - [ ] Add GraphQL (mutation, query)
 - [ ] Add GraphQL Subscription
 - [ ] Add CLI tied to GraphQL (in Ruby)
-- [ ] Add ApolloUI tied to GraphQL Subscription
+- [ ] Add GraphQL Client to BmxWeb (with Subscription)
 
 - [ ] Sys, Users, Offers, Contracts, etc.
 - [ ] Admin UI

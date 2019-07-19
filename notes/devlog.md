@@ -184,16 +184,25 @@
 - [x] Clean up BmxWeb
 - [x] Add web subnav
 
-## TBD
+## 2019-Jul-19 Fri 
 
-- [ ] Add WebUI (user list, live update, editing)
-- [ ] Use UUID as element ids
+- [x] Add Admin Pages (Users/Offers/Contracts)
+- [ ] VIM: Fix controller/template/view vim nav
+- [ ] VIM: Upgrade from ALE(?)
+- [ ] Admin: Create an Add-User button
+- [ ] Admin: Create an Deactivate-User button (user status: active/deactivated/etc.)
+- [ ] Admin: Show list of commands (streaming?)
+- [ ] Admin: Edit user
+
+## TBD
 
 - [ ] Add Ratatouille (user list, live update)
 - [ ] Add GraphQL (mutation, query)
 - [ ] Add GraphQL Subscription
 - [ ] Add CLI tied to GraphQL (in Ruby)
 - [ ] Add GraphQL Client to BmxWeb (with Subscription)
+
+- [ ] Use UUID as element ids
 
 - [ ] Sys, Users, Offers, Contracts, etc.
 - [ ] Admin UI

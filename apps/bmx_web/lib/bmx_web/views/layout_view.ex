@@ -4,7 +4,7 @@ defmodule BmxWeb.LayoutView do
   def hdr_link(conn, lbl, path) do
     ~e"""
     <li class="nav-item">
-      <%= active_link(conn, lbl, to: path, class_active: "nav-link active", class_inactive: "nav-link") %>
+      <%= active_link(conn, lbl, to: path, class_active: "nav-link active", class_inactive: "nav-link", active: :exclusive) %>
     </li>
     """
   end
@@ -16,5 +16,18 @@ defmodule BmxWeb.LayoutView do
     </li>
     """
   end
-end
 
+  def subnav_link(conn, lbl, path) do
+    ~e"""
+    <li class="nav-item">
+      <%= active_link(conn, lbl, to: path, class_active: "nav-link active", class_inactive: "nav-link") %>
+    </li>
+    """
+  end
+
+  def controller_label(conn) do
+    cname = conn.private.phoenix_controller |> to_string() |> String.replace("Elixir.", "")
+    aname = conn.private.phoenix_action
+    "#{cname}##{aname}"
+  end
+end

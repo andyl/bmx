@@ -22,6 +22,7 @@ defmodule BmxWeb do
       use Phoenix.Controller, namespace: BmxWeb
       import Plug.Conn
       import BmxWeb.Gettext
+      import BmxWeb.Plug.ControllerHelpers
       import Phoenix.LiveView.Controller, only: [live_render: 3]
       alias BmxWeb.Router.Helpers, as: Routes
     end

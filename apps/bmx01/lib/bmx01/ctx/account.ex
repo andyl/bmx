@@ -30,6 +30,14 @@ defmodule Bmx01.Ctx.Account do
   end
 
   @doc """
+  Get number of users
+  """
+  def num_users do
+    cqry = from(t in "users", select: count(t.id))
+    Repo.one(cqry)
+  end
+
+  @doc """
   Create a user
   """
   def create_user(params) do

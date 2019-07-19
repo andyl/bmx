@@ -1,0 +1,4 @@
+<a class="navbar-brand", href="/admin">Admin</a>
+<%= subnav_link(@conn, "Users",     "/admin/users") %>
+<%= subnav_link(@conn, "Offers",    "/admin/offers") %>
+<%= subnav_link(@conn, "Contracts", "/admin/contracts") %>

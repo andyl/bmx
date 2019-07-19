@@ -28,10 +28,10 @@ defmodule BmxWeb.Router do
   scope "/admin", BmxWeb do
     pipe_through :browser
 
-    get "/",      AdminController, :index
-    get "/urls",  AdminController, :urls
-    get "/logs",  AdminController, :logs
-    get "/stats", AdminController, :stats
+    get "/",          AdminController, :index
+    get "/users",     AdminController, :users
+    get "/offers",    AdminController, :offers
+    get "/contracts", AdminController, :contracts
   end
 
   scope "/admin_gq", BmxWeb do

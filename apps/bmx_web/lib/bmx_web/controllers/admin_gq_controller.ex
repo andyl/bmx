@@ -1,6 +1,8 @@
 defmodule BmxWeb.AdminGqController do
   use BmxWeb, :controller
 
+  plug :assign_subnav, "admin_gq"
+
   def index(conn, _params) do
     render(conn, "index.html")
   end

@@ -1,4 +1,4 @@
-defmodule Bmx01.Ctx.AccountTest do 
+defmodule Bmx01.Ctx.AccountTest do
   use ExUnit.Case, async: true
   alias Bmx01.{Repo, Factory}
   alias Bmx01.Ctx.Account
@@ -30,7 +30,18 @@ defmodule Bmx01.Ctx.AccountTest do
       assert data1 = Factory.insert(:user)
       assert data2 = Account.get_user_by(name: data1.name)
       assert data1.id == data2.id
-    end 
+    end
+  end
+
+  describe "#num_users" do
+    test "returns user count with 0 users" do
+      assert Account.num_users() == 0
+    end
+
+    test "returns user count with 1 user" do
+      Factory.insert(:user)
+      assert Account.num_users() == 1
+    end
   end
 
   describe "#create_user" do

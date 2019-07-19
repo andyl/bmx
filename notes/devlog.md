@@ -181,11 +181,12 @@
 
 - [x] Add Account context
 - [x] Add tests for account context
-- [ ] Clean up BmxWeb
-- [ ] Add WebUI (user list, live update, editing)
+- [x] Clean up BmxWeb
+- [x] Add web subnav
 
 ## TBD
 
+- [ ] Add WebUI (user list, live update, editing)
 - [ ] Use UUID as element ids
 
 - [ ] Add Ratatouille (user list, live update)

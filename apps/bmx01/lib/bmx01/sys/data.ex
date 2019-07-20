@@ -28,7 +28,7 @@ defmodule Bmx01.Sys.Data do
   Useful for prototyping and research.
   """
   def seed do
-    UserCmd.Create.exec(%{name: "user1"})
+    UserCmd.Create.exec(%{name: "user1"}) 
     UserCmd.Create.exec(%{name: "user2"})
     UserCmd.Create.exec(%{name: "user3"})
   end
@@ -45,7 +45,7 @@ defmodule Bmx01.Sys.Data do
   end
 
   defp reset_postgres do
-    [User, Issue, Tracker, LogCmd]
+    [User, Issue, Tracker, LogCmd] 
     |> Enum.map(&Repo.delete_all(&1))
   end
 end

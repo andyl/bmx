@@ -187,8 +187,10 @@
 ## 2019-Jul-19 Fri 
 
 - [x] Add Admin Pages (Users/Offers/Contracts)
-- [ ] VIM: Fix controller/template/view vim nav
-- [ ] VIM: Upgrade from ALE(?)
+- [x] VIM: Fix controller/template/view vim nav
+
+## 2019-Jul-20 Sat 
+
 - [ ] Admin: Create an Add-User button
 - [ ] Admin: Create an Deactivate-User button (user status: active/deactivated/etc.)
 - [ ] Admin: Show list of commands (streaming?)
@@ -212,6 +214,8 @@
 - [ ] Web / GraphQL
 - [ ] Web / Monitor
 - [ ] Web / BaseUI
+
+- [ ] VIM: ALE to COC.vim (NeoVim 0.4) https://kassioborges.dev/2019/03/21/elixir-ls-on-coc.nvim.html
 
 - [ ] CLI / Admin Dashboard (Ratatouille)
 

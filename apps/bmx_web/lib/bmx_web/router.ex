@@ -22,16 +22,18 @@ defmodule BmxWeb.Router do
     get "/logs",  HomeController, :logs
     get "/stats", HomeController, :stats
 
-    live "/demo", Demo
+    live "/demo", Home.DemoLive
   end
 
   scope "/admin", BmxWeb do
     pipe_through :browser
 
     get "/",          AdminController, :index
-    get "/users",     AdminController, :users
+    # get "/users",     AdminController, :users
     get "/offers",    AdminController, :offers
     get "/contracts", AdminController, :contracts
+
+    live "/users", Admin.UsersLive
   end
 
   scope "/admin_gq", BmxWeb do

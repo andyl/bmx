@@ -1,5 +1,9 @@
 <h3>ADMIN USERS</h3>
 
+<p>
+<button phx-click="add">ADD NEW USER</button>
+</p>
+
 <%= for user <- @users do %>
   Name: <%= user.name %><br/>
 <% end %>

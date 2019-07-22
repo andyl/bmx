@@ -1,10 +1,10 @@
-defmodule BmxWeb.Demo do
+defmodule BmxWeb.Home.DemoLive do
   use Phoenix.LiveView
   use Timex
-  alias BmxWeb.DemoView
+  alias BmxWeb.HomeView
 
   def render(assigns) do
-    DemoView.render("index.html", assigns)
+    HomeView.render("demo.html", assigns)
   end
 
   def mount(_session, socket) do

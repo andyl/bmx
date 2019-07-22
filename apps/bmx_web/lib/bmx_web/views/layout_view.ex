@@ -26,7 +26,6 @@ defmodule BmxWeb.LayoutView do
   end
 
   def controller_label(conn) do
-    IO.inspect conn
     if Map.has_key?(conn.private, :phoenix_controller) do
       cname = conn.private.phoenix_controller |> to_string() |> String.replace("Elixir.", "")
       aname = conn.private.phoenix_action

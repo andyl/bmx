@@ -1,6 +1,6 @@
 # BMX DevLog
 
-## 2019-Apr-29 Sun | 0800-1000
+## 2019 May 01 Wed | 0800-1000
 
 - [x] Upgrade Elixir, Phoenix, Erlang
 
@@ -14,12 +14,12 @@
 | mix help --search hex                 | show hex tasks         |
 |---------------------------------------|------------------------|
 
-## 2019-May-03 Fri 
+## 2019 May 03 Fri 
 
 - [x] Learn Mix and Hex
 - [x] Review Elixir guide
 
-## 2019-May-07 Tue 
+## 2019 May 07 Tue 
 
 - [x] Review Elixir Book
 - [x] Finish OTP Book 
@@ -33,13 +33,13 @@
 - [x] Take Elixir class (coding gnome)
 - [x] Take [Elixir Class][PragStudio]
 
-## 2019-May-08 Wed 
+## 2019 May 08 Wed 
 
 - [x] Get rid of all compile errors in Absinthe examples (git repo)
 - [x] Review Absinthe Book w/Exercises
 - [x] Absinthe Class Sections 1-2
 
-## 2019-May-09 Thu 
+## 2019 May 09 Thu 
 
 - [x] Follow the Ecto Getting Started
 - [x] Absinthe Class Sections 3-6
@@ -49,11 +49,11 @@
 - [x] umbrella: editor nav
 - [x] umbrella: separate webapps on different ports
 
-## 2019-May-10 Fri 
+## 2019 May 10 Fri 
 
 - [x] Refactor application layout
 
-## 2019-May-18 Sat 
+## 2019 May 18 Sat 
 
 - [x] Get test|model navigation working in vim
 - [x] Get test watcher working
@@ -64,7 +64,7 @@
 - [x] Get DataModel test working
 - [x] Fix vim cursorline formatting (non-grey periods) (f2)
 
-## 2019-May-19 Sun 
+## 2019 May 19 Sun 
 
 - [x] Test ExMachina
 - [x] Install and test propcheck
@@ -73,7 +73,7 @@
 - [x] Move sandbox helper into helper script
 - [x] How to use jsonb in Ecto?
 
-## 2019-May-20 Mon 
+## 2019 May 20 Mon 
 
 - [x] Add ExGuard
 - [x] Learn ecto types
@@ -88,7 +88,7 @@
 - [x] Study Commanded
 - [x] Study Event Bus 
 
-## 2019-May-20 Mon 
+## 2019 May 20 Mon 
 
 - [x] How to make a common statement block? (copy timestamps)
 - [x] Handle Associations
@@ -97,12 +97,12 @@
 - [x] TI - create data associations (tracker / issue)
 - [x] TI - create context layer
 
-## 2019-May-22 Wed 
+## 2019 May 22 Wed 
 
 - [x] install asdf
 - [x] read commanded guides
 
-## 2019-Jun-19 WED 
+## 2019 Jun 19 WED 
 
 - [x] Upgrade to 1.9
 - [x] Add Timex (bmx01 and bmx_web)
@@ -118,7 +118,7 @@
 - [x] Host Docker Image
 - [x] Add GraphQL HelloWorld
 
-## 2019-Jul-12 Fri
+## 2019 Jul 12 Fri
 
 - [x] Create phoenix template
 - [x] Create `new.phx` script
@@ -131,14 +131,14 @@
 - [x] Add LazyDocker
 - [x] Created Event-Sourcing Strategy
 
-## 2019-Jul-13 Sat 
+## 2019 Jul 13 Sat 
 
 - [x] Add CI
 - [x] DOC1 - Publish doc on Bugmark.tech
 - [x] BMX image on DockerHub
 - [x] BMX container on bugmark.tech 
 
-## 2019-Jul-14 Sun 
+## 2019 Jul 14 Sun 
 
 - [x] OTP Experiment (BMA Embedding)
 - [x] Add Fontawesome
@@ -148,18 +148,18 @@
 - [x] CASMACC: Update descriptions on DockerHub 
 - [x] BUGMARK: Update descriptions on DockerHub 
 
-## 2019-Jul-15 Mon 
+## 2019 Jul 15 Mon 
 
 - [x] Study ElixirInAction/OTP
 
-## 2019-Jul-16 Tue 
+## 2019 Jul 16 Tue 
 
 - [x] New generators for umbrellas
 - [x] Distillery multiple release config
 - [x] Include BMA in BMX (OTP Config)
 - [x] Distillery multiple releases
 
-## 2019-Jul-17 Wed 
+## 2019 Jul 17 Wed 
 
 - [x] Rename `marcom` to `bmx_marcom`
 - [x] Add Bmx01.Sys.Host
@@ -177,22 +177,22 @@
 - [x] Setup commands
 - [x] Add UserFactory that uses Command
 
-## 2019-Jul-18 Thu 
+## 2019 Jul 18 Thu 
 
 - [x] Add Account context
 - [x] Add tests for account context
 - [x] Clean up BmxWeb
 - [x] Add web subnav
 
-## 2019-Jul-19 Fri 
+## 2019 Jul 19 Fri 
 
 - [x] Add Admin Pages (Users/Offers/Contracts)
 - [x] VIM: Fix controller/template/view vim nav
 
-## 2019-Jul-20 Sat 
+## 2019 Jul 20 Sat 
 
 - [ ] Admin: Create an Add-User button
-- [ ] Admin: Create an Deactivate-User button (user status: active/deactivated/etc.)
+- [ ] Admin: Create an Deactivate-User button (status: active/deactivated/etc.)
 - [ ] Admin: Show list of commands (streaming?)
 - [ ] Admin: Edit user
 
@@ -215,7 +215,8 @@
 - [ ] Web / Monitor
 - [ ] Web / BaseUI
 
-- [ ] VIM: ALE to COC.vim (NeoVim 0.4) https://kassioborges.dev/2019/03/21/elixir-ls-on-coc.nvim.html
+- [ ] VIM: ALE to COC.vim (NeoVim 0.4) 
+- [ ] VIM/COC: https://kassioborges.dev/2019/03/21/elixir-ls-on-coc.nvim.html
 
 - [ ] CLI / Admin Dashboard (Ratatouille)
 

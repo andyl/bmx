@@ -189,14 +189,16 @@
 - [x] Add Admin Pages (Users/Offers/Contracts)
 - [x] VIM: Fix controller/template/view vim nav
 
-## 2019 Jul 20 Sat 
+## 2019 Aug 13 Tue
+
+- [ ] How to start the Admin UI?
+
+## TBD
 
 - [ ] Admin: Create an Add-User button
 - [ ] Admin: Create an Deactivate-User button (status: active/deactivated/etc.)
 - [ ] Admin: Show list of commands (streaming?)
 - [ ] Admin: Edit user
-
-## TBD
 
 - [ ] Add Ratatouille (user list, live update)
 - [ ] Add GraphQL (mutation, query)

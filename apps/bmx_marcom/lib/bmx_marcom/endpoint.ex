@@ -15,7 +15,7 @@ defmodule BmxMarcom.Endpoint do
     at: "/",
     from: :bmx_marcom,
     gzip: false,
-    only: ~w(css fonts images js favicon.ico robots.txt)
+    only: ~w(css fonts images icons js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
